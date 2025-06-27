@@ -12,5 +12,5 @@ void runProgram() {
 
 
 int main(void) {
-
+    runProgram();
 }
