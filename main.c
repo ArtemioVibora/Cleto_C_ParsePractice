@@ -10,16 +10,16 @@
 int isButSpace(char string[]) {
     for (int i = 0; string[i] != '\0'; i++) {
         if (string[i] != ' ') {
-            return 1;
+            return 0;
         }
     }
-    return 0;
+    return 1;
 }
 
 int countWords(char string[]) {
     int numWords = 1;
 
-    if (isButSpace(string) == 0) {
+    if (isButSpace(string) == 1) {
         numWords = 0;
     }
     else {
